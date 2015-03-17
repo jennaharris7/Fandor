@@ -1,0 +1,226 @@
+<div class="uk-container-center"><!-- WRAPPER -->
+
+	<div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
+				<!-- HEADER -->
+				<div class="uk-width-medium-1-1 uk-clearfix uk-hidden-small">
+					<h6 class="uk-float-right uk-margin-bottom-remove">Watch movies anytime, anywhere. Plans from $7.50 a month.</h6>
+				</div>
+				
+				<!-- NAV -->
+				<nav class="uk-navbar header-nav">
+				    <div class="uk-navbar-content uk-hidden-small logo"><img class="uk-responsive-width" src="img/fandor_logo.png" width="200px" alt="Fandor Logo" /></div>
+				         <ul class="uk-navbar-nav uk-hidden-small uk-margin-large-left">
+				              <li class="uk-parent" data-uk-dropdown>
+				                  <a href="#">Films <i class="uk-icon-caret-down"></i></a>
+								  	 <div class="uk-dropdown uk-dropdown-navbar uk-margin-top">
+										 <ul class="uk-nav uk-nav-navbar uk-nav-parent-icon" data-uk-nav>
+											 <li><a href="#">Recently Added</a></li>
+											 <li class="uk-parent">
+												 <a href="#">Genres</a>																	
+											 </li>
+											 <li class="uk-parent">
+												 <a href="#">International</a>
+											 </li>
+											 <li><a href="#">Popular</a></li>
+											 <li><a href="#">Festivals</a></li>
+										 </ul>
+									 </div>
+				              </li>
+				              <li class="uk-parent" data-uk-dropdown>
+				                  <a href="#">Featured <i class="uk-icon-caret-down"></i></a>
+								  	 <div class="uk-dropdown uk-dropdown-navbar uk-margin-top">
+										 <ul class="uk-nav uk-nav-navbar">
+											 <li><a href="#">Spotlights</a></li>
+											 <li><a href="#">Criterion</a></li>
+											 <li><a href="#">Coming Soon</a></li>
+											 <li><a href="#">Fandor Channel</a></li>
+											 <li><a href="#">Keyframe</a></li>											 
+										 </ul>
+									 </div>
+				              </li>
+				              <li class="uk-parent" data-uk-dropdown>
+				                  <a href="#">Community <i class="uk-icon-caret-down"></i></a>
+								  	 <div class="uk-dropdown uk-dropdown-navbar uk-margin-top">
+										 <ul class="uk-nav uk-nav-navbar">
+											 <li><a href="#">Top movie reviews</a></li>
+											 <li><a href="#">Movie lists</a></li>
+											 <li><a href="#">Filmmakers</a></li>	   										 											 
+										 </ul>										 
+									 </div>
+				              </li>                
+				         </ul>
+						 <div class="uk-navbar-flip">
+							 <ul class="uk-navbar-nav">
+								 <li><a href="#">Log in</a></li>
+							 </ul>
+							 <div class="uk-navbar-content uk-hidden-small">
+								 <button class="uk-button login_button">Start your free trial today</button>
+							 </div>
+						 </div>
+				    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+				    <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-responsive-width" src="img/fandor_logo.png"  alt="Fandor Logo" /></div>
+				</nav>
+				<!-- END NAV -->				
+			</div>
+			<!-- END HEADER -->
+			
+			<!-- DIVIDER LINE -->
+			<hr class="divider uk-margin-remove" />
+			
+			<!-- TOPBAR -->
+			<div class="uk-width-1-1 topBar">
+				<div class="uk-container uk-container-center">
+					<h2 class="uk-margin-top uk-margin-bottom-remove uk-margin-large-left">Film Festivals</h2>
+					<h6 class="uk-margin-large-bottom uk-margin-top-remove uk-margin-large-left">If your looking for the best films form the world's finest film festivals, you've come to the right place.</h6>
+				</div>
+			</div>
+			<!-- END TOPBAR -->
+			
+			<!-- SLIDESHOW -->
+			<div class="uk-grid uk-grid-collapse">
+				<div class="uk-width-small-1-6 uk-overlay">
+					<figcaption class="uk-overlay-panel uk-overlay-background"></figcaption>
+				</div>
+				<div class="uk-width-small-2-3">
+					<div class="sliderBox">
+						<ul id="slider1">
+				  		  <li>
+				    		  <a href="#slide1"><img src="img/fest1.png"></a>
+				  		  </li>
+				  	  	  <li>
+				    		  <a href="#slide2"><img src="img/fest2.png"></a>
+				  	      </li>
+				  	      <li>
+				    	      <a href="#slide3"><img src="img/fest3.png"></a>
+				  	      </li>
+					    </ul>
+			         </div>
+				 </div>
+				 <div class="uk-width-small-1-6 slideside uk-overlay">
+					 <figcaption class="uk-overlay-panel uk-overlay-background"></figcaption>
+				 </div>
+			 </div>
+				 
+				
+			<!-- END SLIDESHOW -->
+		
+			<!-- BEGIN MAIN PAGE -->
+			<div class="uk-container uk-container-center uk-margin-large-bottom">
+				<h3 class="uk-margin-large-top uk-margin-bottom-remove">Marquee Festivals</h3>
+	            <div class="uk-grid uk-grid-divider" data-uk-grid-margin>
+					<div class="uk-width-medium-2-3">
+						<div class="uk-grid uk-grid-small uk-grid-match" data-uk-grid-margin data-uk-grid-match="{target:'.uk-panel'}">
+							{{#each data in model}}
+							
+							{{#if data.marquee}}
+	                		<div class="uk-width-medium-1-3">
+	                    	   	<div class="uk-panel uk-panel-box festBox">
+									<img src="img/fest1.png" width="100%"/>
+									<div class="ribbonDiv"><h6>{{data.film_count}} films</h6></div>
+									<h4 class="uk-margin-small-top uk-margin-bottom-remove">{{data.fname}}</h4>
+									<h5 class="uk-margin-small-top">{{data.description}}</h5>
+								</div>                
+	                		</div>
+							{{/if}}
+							
+							{{/each}}                		
+						</div>
+					</div>
+					<div class="uk-width-medium-1-3">
+						<div class="uk-grid">
+							<div class="uk-width-1-1">
+								<img src="img/rightTopImage.png" alt="Fandor Festival Alliance" />
+								<h3 class="uk-margin-bottom-remove">Fandor | Festival Alliance</h3>
+								<h5 class="uk-margin-top-remove grey_text">We connect film festivals to their audiences through social buzz, multimedia promotion, great movies and exciting offers.  Go ahead! Check out our partners.</h5>
+								<p class="uk-text-bold underline_spots">Upcoming Festivals</p>
+								<ul class="uk-list upcoming">									
+									{{#each festival in model}}
+									
+									{{#if festival.upcoming}}
+									
+									<li>
+										<img src="img/upcoming.png" alt="Upcoming Festival">
+										<h4 class="uk-margin-remove">{{festival.fname}}</h4>
+										<h5 class="uk-margin-top-remove uk-margin-small-bottom">{{festival.start_date}} - {{festival.end_date}}</h5>
+									</li>
+									
+									{{/if}}
+									
+									{{/each}}
+									
+								</ul>
+								<p class="uk-text-bold underline_spots">All F|FA Festivals</p>
+								<ul>
+									{{#each festival in model}}
+									
+									{{#if festival.all}}
+										
+											<li>
+												<a href="#">{{festival.fname}}</a>
+											</li>
+											
+											{{/if}}
+										
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+					</div>
+	            </div>
+	        </div>
+			<!-- END MAIN PAGE -->
+
+	        <div id="offcanvas" class="uk-offcanvas">
+	            <div class="uk-offcanvas-bar">
+	                <ul class="uk-nav uk-nav-offcanvas">
+	                    <li class="uk-active">
+	                        <a href="layouts_frontpage.html">Frontpage</a>
+	                    </li>
+	                    <li>
+	                        <a href="layouts_portfolio.html">Portfolio</a>
+	                    </li>
+	                    <li>
+	                        <a href="layouts_blog.html">Blog</a>
+	                    </li>
+	                    <li>
+	                        <a href="layouts_documentation.html">Documentation</a>
+	                    </li>
+	                    <li>
+	                        <a href="layouts_contact.html">Contact</a>
+	                    </li>
+	                    <li>
+	                        <a href="layouts_login.html">Login</a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+
+
+</div>
+
+<script>
+
+jQuery(document).ready(function(){
+  jQuery('#slider1').slippry({
+  	slippryWrapper: '<div class="sliderBox" />', // wrapper to wrap everything, including pager
+  	elements: 'li', // elments cointaining slide content
+  	pager: false,
+	transition: 'horizontal'	 
+  });
+  jQuery('#slider2').slippry({
+  	slippryWrapper: '<div class="sliderBox" />', // wrapper to wrap everything, including pager
+  	elements: 'li', // elments cointaining slide content
+  	pager: false,
+	start: 2,
+	transition: 'horizontal'	 
+  });
+  jQuery('#slider3').slippry({
+  	slippryWrapper: '<div class="sliderBox" />', // wrapper to wrap everything, including pager
+  	elements: 'li', // elments cointaining slide content
+  	pager: false,
+	start: 3,
+	transition: 'horizontal'	 
+  });
+});
+    
+</script>

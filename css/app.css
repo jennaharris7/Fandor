@@ -1,0 +1,170 @@
+body, h1, h2, h3, h4, h5, p, button, span, a {
+	font-family: 'PT Sans Narrow', Helvetica, Roboto, Arial, sans-serif;
+}
+
+.uk-navbar {
+	background: #ffffff;
+	border: none;
+}
+
+.uk-navbar ul li a {
+	font-family: 'PT Sans Narrow', Helvetica, Roboto, Arial, sans-serif;
+	font-size: 1.1em;
+	color: #777777;
+}
+
+.uk-navbar-flip ul li a {
+	color: #3399ff;
+}
+
+.uk-navbar ul li a:hover {
+	color: #fc5828;
+	background: transparent;
+	border: none;
+	text-decoration: underline;
+}
+
+.uk-navbar ul li ul li a:hover {
+	color: #3399ff;
+	background: #f1f1f1;
+}
+
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li.uk-open > a {
+	color: #fc5828;
+	background: transparent;
+	border: none;
+	text-decoration: underline;
+	z-index: 1;
+}
+
+.logo {
+	margin-top: -10px;
+}
+
+.divider {
+	background: #fc5828;
+	height: 7px;
+}
+
+.login_button {
+	background: #fc5828;
+	color: #ffffff;
+	letter-spacing: 1px;
+	text-shadow:
+	    -.5px -.5px 0 #555,
+	    .5px -.5px 0 #555,
+	    -.5px .5px 0 #555,
+	    .5px .5px 0 #555;
+}
+
+.sliderShell {
+	width: 100%;
+	/*margin-left: -575px;*/
+	overflow: hidden;
+}
+
+ul#slider, ul#slider li {
+   	width: 100%;
+    list-style: none;
+}
+
+
+.topBar {
+	background-color: #413f3d;
+}
+
+.topBar h2 {
+	color: #eb9d4c;
+}
+
+.topBar h6 {
+	color: #ffffff;
+}
+
+.uk-panel h4 {
+	font-size: 1.3em;
+	color: #4cb1ca;
+}
+
+.festBox {
+	border: solid 1px #999999;
+}
+
+.ribbonDiv {
+	background-image: url('../img/ribbon2.png');
+	height: 30px;
+	width: 70px;
+	position: absolute;
+	top: 20px;
+	left: 5px;
+	z-index: 1;
+}
+
+.ribbonDiv h6 {
+	color: #ffffff;
+	font-size: .80em;
+	padding-left: 5px;
+	padding-top: 5px;
+	text-shadow: 0.5px 0.5px #777777;
+	letter-spacing: .7px;
+}
+
+.upcoming h4 {
+	color: #4cb1ca;
+}
+
+.upcoming h5 {
+	color: #ed9f46;
+}
+
+.grey_text {
+	color: #777777;
+	letter-spacing: .7px;
+}
+
+.underline_spots {
+	border-bottom: 1px dotted #777777;
+}
+
+.slideshow {
+	height: 400px;
+}
+
+.sliderBox {
+	height: 325px;
+	overflow: hidden;
+}
+
+.sliderBox ul li {
+	height: 325px;
+}
+
+/*.sliderBox1 {
+	position: absolute;
+	top: 200px;
+	left: 0%;
+	width: 30%;
+	height: 325px;
+}
+
+.sliderBox2 {
+	position: absolute;
+	top: 200px;
+	width: 60%;
+	left: 20%;
+	height: 325px;
+}
+
+.sliderBox3 {
+	position: absolute;
+	top: 200px;
+	width: 30%;
+	right: 0%;
+	height: 325px;
+}*/
+
+.dummy {
+	display: none;
+}

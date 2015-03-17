@@ -1,0 +1,1 @@
+Fandor = Ember.Application.create();
