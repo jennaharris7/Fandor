@@ -99,9 +99,7 @@
 				 <div class="uk-width-small-1-6 slideside uk-overlay">
 					 <figcaption class="uk-overlay-panel uk-overlay-background"></figcaption>
 				 </div>
-			 </div>
-				 
-				
+			 </div>				 				
 			<!-- END SLIDESHOW -->
 		
 			<!-- BEGIN MAIN PAGE -->
@@ -117,7 +115,7 @@
 	                    	   	<div class="uk-panel uk-panel-box festBox">
 									<img src="img/fest1.png" width="100%"/>
 									<div class="ribbonDiv"><h6>{{data.film_count}} films</h6></div>
-									<h4 class="uk-margin-small-top uk-margin-bottom-remove">{{data.fname}}</h4>
+									<h4 class="uk-margin-small-top uk-margin-bottom-remove">{{shortNamer data.fname}}</h4>
 									<h5 class="uk-margin-small-top">{{data.description}}</h5>
 								</div>                
 	                		</div>
@@ -140,7 +138,7 @@
 									
 									<li>
 										<img src="img/upcoming.png" alt="Upcoming Festival">
-										<h4 class="uk-margin-remove">{{festival.fname}}</h4>
+										<h4 class="uk-margin-remove">{{shortNamer festival.fname}}</h4>
 										<h5 class="uk-margin-top-remove uk-margin-small-bottom">{{festival.start_date}} - {{festival.end_date}}</h5>
 									</li>
 									
@@ -156,7 +154,7 @@
 									{{#if festival.all}}
 										
 											<li>
-												<a href="#">{{festival.fname}}</a>
+												<a href="#">{{shortNamer festival.fname}}</a>
 											</li>
 											
 											{{/if}}

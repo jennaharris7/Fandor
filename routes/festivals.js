@@ -1,7 +1,7 @@
 Fandor.FestivalsRoute = Ember.Route.extend({
 	model: function() {
 		festivals.forEach(function(festival){
-		    festival.fname = festival.fname.replace("Film Festival", "");
+		    //festival.fname = festival.fname.replace("Film Festival", "");
 			marquees.forEach(function(marquee){
 				if(festival.id == marquee){
 					festival.marquee = true;
